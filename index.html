@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sports Db</title>
     <!-- css  -->
-    <link rel="stylesheet" href="style.css0">
+    <link rel="stylesheet" href="style.css">
     <!-- bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -19,7 +19,7 @@
     <div class="container w-100 m-auto">
         <div class="row w-100 m-auto">
             <!-- left side  -->
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <h1>left side</h1>
                 <div class="input-group mb-3 w-75">
                     <input id="search-box" type="text" class="form-control" placeholder="Search"
@@ -27,10 +27,21 @@
                     <button onclick="allPlayers()" class="btn btn-primary ms-2 rounded-3" type="button"
                         id="search-btn">Search</button>
                 </div>
+                <img id="spinner" src="images/loading-43.gif" alt="">
+                <div class="player-container" id="player-container">
+
+                </div>
             </div>
             <!-- right side  -->
-            <div class="col-md-6">
+            <div class="col-md-6 text-center">
                 <h1>right side</h1>
+                <div class="images-container w-50">
+                    <img id="male" class="w-75" src="images/male.jpeg" alt="">
+                    <img id="female" class="w-75" src="images/female.jpg" alt="">
+                </div>
+                <div id="details-container" class="details-container">
+
+                </div>
             </div>
         </div>
     </div>
