@@ -15,7 +15,25 @@
 </head>
 
 <body>
-    <h1>Hellow viewer</h1>
+    <h1 class="text-center">Hellow viewer</h1>
+    <div class="container w-100 m-auto">
+        <div class="row w-100 m-auto">
+            <!-- left side  -->
+            <div class="col-md-6">
+                <h1>left side</h1>
+                <div class="input-group mb-3 w-75">
+                    <input id="search-box" type="text" class="form-control" placeholder="Search"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button onclick="allPlayers()" class="btn btn-primary ms-2 rounded-3" type="button"
+                        id="search-btn">Search</button>
+                </div>
+            </div>
+            <!-- right side  -->
+            <div class="col-md-6">
+                <h1>right side</h1>
+            </div>
+        </div>
+    </div>
 
     <!-- js  -->
     <script src="app.js"></script>
